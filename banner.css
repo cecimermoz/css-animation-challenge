@@ -1,0 +1,414 @@
+body{margin: 0; padding: 0; box-sizing: border-box;}
+.container{
+    width: 300px;
+    height: 250px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.logos{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(logos.png);
+    z-index: 4;
+}
+
+.zocalo{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.boton{
+    position: absolute;
+    background-image: url(boton.png);
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-animation: link 7000ms ease-in 400ms forwards;
+    -moz-animation: link 7000ms ease-in 400ms forwards;
+    -ms-animation: link 7000ms ease-in 400ms forwards;
+    -o-animation: link 7000ms ease-in 400ms forwards;
+    animation: link 7000ms ease-in 400ms forwards;
+}
+
+.foto{
+    width: 100%;
+    height: 100%; 
+    background-image: url(lima.jpg);
+    position: absolute;
+    z-index: 1;
+}
+
+.foto-2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 30px;
+    z-index: 1;
+}
+
+
+/* ANIMACIONES */
+/* Para Boton */
+@-webkit-keyframes link{
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-moz-keyframes link {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-o-keyframes link{
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes link {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Para Textos 1-2-3 */
+@keyframes texto {
+    from {
+        background-image: none;
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        background-image: url(lima-texto.png);
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes texto{
+    from {
+        background-image: none;
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        background-image: url(lima-texto.png);
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-moz-keyframes texto{
+    from {
+        background-image: none;
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        background-image: url(lima-texto.png);
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-o-keyframes texto{
+    from {
+        background-image: none;
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        background-image: url(lima-texto.png);
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes texto-2{
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+        background-image: url(cusco-texto.png);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        background-image: url(cusco-texto.png);
+
+    }
+}
+@-moz-keyframes texto-2{
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+        background-image: url(cusco-texto.png);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        background-image: url(cusco-texto.png);
+
+    }
+}
+@-o-keyframes texto-2{
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+        background-image: url(cusco-texto.png);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        background-image: url(cusco-texto.png);
+
+    }
+}
+@keyframes texto-2{
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+        background-image: url(cusco-texto.png);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        background-image: url(cusco-texto.png);
+
+    }
+}
+@-webkit-keyframes texto-3{
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+        background-image: url(arequipa-texto.png);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        background-image: url(arequipa-texto.png);
+
+    }
+}
+@-moz-keyframes texto-3{
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+        background-image: url(arequipa-texto.png);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        background-image: url(arequipa-texto.png);
+
+    }
+}
+@-o-keyframes texto-3{
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+        background-image: url(arequipa-texto.png);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        background-image: url(arequipa-texto.png);
+
+    }
+}
+@keyframes texto-3{
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+        background-image: url(arequipa-texto.png);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        background-image: url(arequipa-texto.png);
+
+    }
+}
+
+/* Para Imagenes 1 y 2 */
+@-webkit-keyframes imagen{
+    0%{
+        opacity: 0;
+        right: 30px;
+        background-image: url(cusco.jpg);
+
+    }
+    15%{
+        opacity: 1;
+        right: 0px;
+        background-image: url(cusco.jpg);
+
+    }
+    100%{
+        right: 0px;
+        background-image: url(cusco.jpg);
+    }
+}
+@-moz-keyframes imagen {
+    0%{
+        opacity: 0;
+        right: 30px;
+        background-image: url(cusco.jpg);
+
+    }
+    15%{
+        opacity: 1;
+        right: 0px;
+        background-image: url(cusco.jpg);
+
+    }
+    100%{
+        right: 0px;
+        background-image: url(cusco.jpg);
+    }
+}
+@-o-keyframes imagen{
+    0%{
+        opacity: 0;
+        right: 30px;
+        background-image: url(cusco.jpg);
+
+    }
+    15%{
+        opacity: 1;
+        right: 0px;
+        background-image: url(cusco.jpg);
+
+    }
+    100%{
+        right: 0px;
+        background-image: url(cusco.jpg);
+    }
+}
+@keyframes imagen {
+    0%{
+        opacity: 0;
+        right: 30px;
+        background-image: url(cusco.jpg);
+
+    }
+    15%{
+        opacity: 1;
+        right: 0px;
+        background-image: url(cusco.jpg);
+
+    }
+    100%{
+        right: 0px;
+        background-image: url(cusco.jpg);
+    }
+}
+@-webkit-keyframes imagen-2{
+    0%{
+        opacity: 0;
+        right: 30px;
+        background-image: url(arequipa.jpg);
+        z-index: 1;
+    }
+    15%{
+        opacity: 1;
+        right: 0px;
+        background-image: url(arequipa.jpg);
+        z-index: 2;
+    }
+    100%{
+        opacity: 1;
+        right: 0px;
+        background-image: url(arequipa.jpg);
+        z-index: 2;
+    
+    }
+}
+@-moz-keyframes imagen-2 {
+    0%{
+        opacity: 0;
+        right: 30px;
+        background-image: url(arequipa.jpg);
+        z-index: 1;
+    }
+    15%{
+        opacity: 1;
+        right: 0px;
+        background-image: url(arequipa.jpg);
+        z-index: 2;
+    }
+    100%{
+        opacity: 1;
+        right: 0px;
+        background-image: url(arequipa.jpg);
+        z-index: 2;
+    
+    }
+}
+@-o-keyframes imagen-2{
+    0%{
+        opacity: 0;
+        right: 30px;
+        background-image: url(arequipa.jpg);
+        z-index: 1;
+    }
+    15%{
+        opacity: 1;
+        right: 0px;
+        background-image: url(arequipa.jpg);
+        z-index: 2;
+    }
+    100%{
+        opacity: 1;
+        right: 0px;
+        background-image: url(arequipa.jpg);
+        z-index: 2;
+    
+    }
+}
+@keyframes imagen-2 {
+    0%{
+        opacity: 0;
+        right: 30px;
+        background-image: url(arequipa.jpg);
+        z-index: 1;
+    }
+    15%{
+        opacity: 1;
+        right: 0px;
+        background-image: url(arequipa.jpg);
+        z-index: 2;
+    }
+    100%{
+        opacity: 1;
+        right: 0px;
+        background-image: url(arequipa.jpg);
+        z-index: 2;
+    
+    }
+}
